@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <i class="bi bi-mountains"></i> Travelly </a>
+                <ul class="navbar-nav flex-row align-items-center me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-3">
+                    <input class="form-control" type="search" placeholder="Search...">
+                </form>
+                <a href="#" class="me-3 text-dark">
+                    <i class="bi bi-bell-fill"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid px-4 py-3">
+        <section class="row mb-3">
+            <div class="col-12">
+                <div class="hero">
+                    <div class="hero-content">
+                        <p>EXPLORE THE WORLD</p>
+                        <h1>Discover Amazing Places</h1>
+                        <p>Find new destinations, create your own collections and start your next adventure.</p>
+                        <a href="#" class="btn btn-primary"> View Destinations </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row g-3">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="category-card">
+                    <img src="assets/img/1nuotrauka.jpg" alt="Destinations" class="category-img">
+                    <div class="category-content">
+                        <div class="category-icon destination-icon">
+                            <i class="bi bi-image-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Destinations</h5>
+                            <p>Explore popular places</p>
+                        </div>
+                        <i class="bi bi-chevron-right ms-auto"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="category-card">
+                    <img src="assets/img/2nuotrauka.jpg" alt="Nature" class="category-img">
+                    <div class="category-content">
+                        <div class="category-icon nature-icon">
+                            <i class="bi bi-leaf-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Nature</h5>
+                            <p>Beautiful landscapes</p>
+                        </div>
+                        <i class="bi bi-chevron-right ms-auto"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="category-card">
+                    <img src="assets/img/3nuotrauka.jpg" alt="Cities" class="category-img">
+                    <div class="category-content">
+                        <div class="category-icon cities-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Cities</h5>
+                            <p>Culture and history</p>
+                        </div>
+                        <i class="bi bi-chevron-right ms-auto"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="category-card">
+                    <img src="assets/img/4nuotrauka.jpg" alt="Favorites" class="category-img">
+                    <div class="category-content">
+                        <div class="category-icon favorites-icon">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Favorites</h5>
+                            <p>Your saved places</p>
+                        </div>
+                        <i class="bi bi-chevron-right ms-auto"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row g-3 mt-1">
+            <div class="col-lg-8 col-12">
+                <div class="destinations-box">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4>Your Destinations</h4>
+                        <div class="d-flex gap-2">
+                            <input type="search" class="form-control" placeholder="Search destinations...">
+                            <button class="btn btn-primary">
+                        <i class="bi bi-plus-lg"></i> Add
+                    </button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Location</th>
+                                    <th>Date Added</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/1nuotrauka.jpg" class="table-img" alt="Mountain Lake">
+                                    </td>
+                                    <td>Mountain Lake</td>
+                                    <td><span class="category-badge nature-badge">Nature</span></td>
+                                    <td>Canada</td>
+                                    <td>2024-10-12</td>
+                                    <td><span class="status-badge published">Published</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm" aria-label="Edit Mountain Lake">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                        <button class="btn btn-danger btn-sm" aria-label="Delete Mountain Lake">
+                                    <i class="bi bi-trash3"></i>
+                                </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/2nuotrauka.jpg" class="table-img" alt="Coastal Town">
+                                    </td>
+                                    <td>Coastal Town</td>
+                                    <td><span class="category-badge city-badge">City</span></td>
+                                    <td>Italy</td>
+                                    <td>2024-09-28</td>
+                                    <td><span class="status-badge published">Published</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm" aria-label="Edit Coastal Town">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                        <button class="btn btn-danger btn-sm" aria-label="Delete Coastal Town">
+                                    <i class="bi bi-trash3"></i>
+                                </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/3nuotrauka.jpg" class="table-img" alt="Hidden Waterfall">
+                                    </td>
+                                    <td>Hidden Waterfall</td>
+                                    <td><span class="category-badge nature-badge">Nature</span></td>
+                                    <td>Iceland</td>
+                                    <td>2024-09-15</td>
+                                    <td><span class="status-badge draft">Draft</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm" aria-label="Edit Hidden Waterfall">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                        <button class="btn btn-danger btn-sm" aria-label="Delete Hidden Waterfall">
+                                    <i class="bi bi-trash3"></i>
+                                </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/4nuotrauka.jpg" class="table-img" alt="Alpine Lake">
+                                    </td>
+                                    <td>Alpine Lake</td>
+                                    <td><span class="category-badge nature-badge">Nature</span></td>
+                                    <td>Austria</td>
+                                    <td>2024-08-21</td>
+                                    <td><span class="status-badge published">Published</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm" aria-label="Edit Alpine Lake">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                        <button class="btn btn-danger btn-sm" aria-label="Delete Alpine Lake">
+                                    <i class="bi bi-trash3"></i>
+                                </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <img src="assets/img/1nuotrauka.jpg" class="table-img" alt="Old Town">
+                                    </td>
+                                    <td>Old Town</td>
+                                    <td><span class="category-badge city-badge">City</span></td>
+                                    <td>Croatia</td>
+                                    <td>2024-08-05</td>
+                                    <td><span class="status-badge draft">Draft</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm" aria-label="Edit Old Town">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                        <button class="btn btn-danger btn-sm" aria-label="Delete Old Town">
+                                    <i class="bi bi-trash3"></i>
+                                </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="destination-form-box">
+                    <h4>Add New Destination</h4>
+
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" placeholder="Enter destination name">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Location</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </span>
+                                    <input type="text" class="form-control" placeholder="Enter location">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Category</label>
+                                <select class="form-select">
+                    <option>Nature</option>
+                    <option>City</option>
+                    <option>Beach</option>
+                    <option>Adventure</option>
+                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Description</label>
+                                <textarea class="form-control" rows="3" placeholder="Write a short description..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Image</label>
+                                <div class="file-box">
+                                    <span class="file-button"> <i class="bi bi-image"></i> Choose file </span>
+                                    <span class="file-text">No file chosen</span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100">Save Destination</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
